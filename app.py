@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model at startup
-model = joblib.load('intraday_model.pkl')
+model = joblib.load('fast_model.pkl')
 print("✅ Model loaded!")
 
 @app.route('/health', methods=['GET'])
